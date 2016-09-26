@@ -12,4 +12,5 @@
 5. The page has to pass [the W3C Markup Validator](https://validator.w3.org/).
 
 ### Week 3 (2016.9.26)
-1. 
+1. CSS intro slide: goo.gl/HLpU2g
+2. Exercise slide: goo.gl/XqUPCq
