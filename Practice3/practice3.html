@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Simple Quadratic Equation Solver</title>
+</head>
+<body>
+	<h1>
+		Simple Quadratic Equation Solver
+	</h1>
+	<input id="x2" type="text" name="x2">
+	<label> x<sup>2</sup> + </label>
+	<input id="x1" type="text" name="x1">
+	<label> x + </label>
+	<input id="x0" type="text" name="x0">
+	<label> = 0 </label>
+	<br>
+	<button onclick="myFunction()">Submit</button>
+	<p id="output"><p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			var x2 = document.getElementById("x2").value;
+			var x1 = document.getElementById("x1").value;
+			var x0 = document.getElementById("x0").value;
+			var c = x1*x1-4*x2*x0;
+			console.log("x2 = "+x2+", x1 = "+x1+", x0 = "+x0);
+			if(c<0){
+				document.getElementById("output").innerHTML = "No real value solution.";
+			}
+			else{
+				var root1 = (c-x1)/(2*x2);
+				var root2 = (-c-x1)/(2*x2);
+				document.getElementById("output").innerHTML = "The roots are "+root1+" and "+root2;
+			}
+		}
+	</script>
+</body>
+</html>
