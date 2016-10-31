@@ -20,6 +20,8 @@ for (var i = 0; i < restaurants.length; i++) {
         cell.appendChild(document.createTextNode(restaurants[i][key]));
         cell.style.border = "1px solid #000000";
         row.appendChild(cell);
+        if (key=="name")
+        	console.log(restaurants[i][key]);
     }
     table_body.appendChild(row);
 }
